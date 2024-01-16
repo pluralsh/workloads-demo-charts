@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  cron:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-16T20:22:26.629237893Z"
+    description: simple chart for deploying a cron workload
+    digest: 768220afd039c1df509f17bbde33d92b5129fbcc50b8893342fef65cd8e00290
+    name: cron
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/cron-v0.1.0/cron-0.1.0.tgz
+    version: 0.1.0
+  webapp:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-16T20:22:26.777906951Z"
+    description: basic webapp workload
+    digest: b92250198a0908f94c3c79d75398a73914d69960b5e68985764b49db3a9904dd
+    name: webapp
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/webapp-v0.1.0/webapp-0.1.0.tgz
+    version: 0.1.0
+  workloads:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-16T20:22:26.903758695Z"
+    description: a wrapper for defining arbitrary configurable workloads
+    digest: 60903994ec67e7c8ca6fb94c1580e3aedca124299707da4f9eef6c9909ed6d91
+    name: workloads
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-16T20:22:26.903805088Z"
