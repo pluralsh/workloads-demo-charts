@@ -21,6 +21,8 @@ spec:
           - name: cron
             image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             imagePullPolicy: {{ .Values.image.pullPolicy }}
+            command: 
+            {{ .Values.command | toYaml | nindent 12 }}
             {{- with .Values.env }}
             env:
             {{- toYaml . | nindent 12 }}

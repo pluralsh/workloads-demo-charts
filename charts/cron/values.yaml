@@ -10,10 +10,12 @@ crontab: "* * * * *"
 env: []
 
 image:
-  repository: nginx
+  repository: gcr.io/pluralsh/library/busybox
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: 1.35.0
+
+command: [ "/bin/sh", "-c", 'echo "hello world"' ]
 
 imagePullSecrets: []
 nameOverride: ""
