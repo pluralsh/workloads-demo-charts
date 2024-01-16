@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Values.cronName }}
+  labels:
+{{ include "cron.labels" . | indent 4 }}
+spec:
+  schedule: {{ .crontab | quote }}
+  successfulJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          serviceAccountName: plural
+          {{- with .Values.imagePullSecrets }}
+          imagePullSecrets:
+          {{- toYaml . | nindent 10 }}
+          {{- end }}
+          containers:
+          - name: cron
+            image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+            imagePullPolicy: {{ .Values.image.pullPolicy }}
+            {{- with .Values.env }}
+            env:
+            {{- toYaml . | nindent 12 }}
+            {{- end }}
+            resources:
+              {{- toYaml .Values.resources | nindent 14 }}

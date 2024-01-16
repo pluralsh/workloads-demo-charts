@@ -1,0 +1,10 @@
+
+
+{{ $context := . }}
+{{ range $index, $workload := .Values.workloads }}
+  {{- $args := mergeOverwrite $context $workload }}
+  {{ if $index }}
+---
+  {{ end }}
+  {{ include (printf "workloads.%s" $workload.type) $args | nindent 0 }}
+{{- end -}}
