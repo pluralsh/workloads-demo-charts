@@ -5,7 +5,7 @@ metadata:
   labels:
 {{ include "cron.labels" . | indent 4 }}
 spec:
-  schedule: {{ .crontab | quote }}
+  schedule: {{ .Values.crontab | quote }}
   successfulJobsHistoryLimit: 2
   jobTemplate:
     spec:
