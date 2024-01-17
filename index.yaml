@@ -3,6 +3,16 @@ entries:
   cron:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-01-17T03:38:45.891421909Z"
+    description: simple chart for deploying a cron workload
+    digest: c131fcacad4c29c529f164447016e82133094ab476c11417a3dfa38bd7d97121
+    name: cron
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/cron-v0.1.2/cron-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-01-16T20:32:32.464506876Z"
     description: simple chart for deploying a cron workload
     digest: 8aa24987c63309e1b536d532d075f9f327f76de7879781e11a3fdacfb18825a5
@@ -43,4 +53,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-16T20:32:32.464555916Z"
+generated: "2024-01-17T03:38:45.891441455Z"
