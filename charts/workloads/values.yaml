@@ -4,6 +4,7 @@
 
 cluster: mgmt
 gitRepository: test
+workspace: demo
 
 workloads:
 - name: webapp

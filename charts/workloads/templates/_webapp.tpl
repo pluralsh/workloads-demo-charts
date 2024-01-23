@@ -2,7 +2,7 @@
 apiVersion: deployments.plural.sh/v1alpha1
 kind: ServiceDeployment
 metadata:
-  name: {{ .name }}
+  name: {{ .Values.workspace }}-{{ .name }}
 spec:
   version: 0.0.1
   namespace: {{ .Release.Namespace }}
