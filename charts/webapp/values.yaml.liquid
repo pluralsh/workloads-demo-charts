@@ -1,0 +1,4 @@
+secretEnv:
+{% for conf in configuration %}
+  {{ conf[0] }}: '{{ conf[1] }}'
+{% endfor %}

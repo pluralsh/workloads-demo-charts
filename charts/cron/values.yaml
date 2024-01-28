@@ -9,6 +9,9 @@ crontab: "* * * * *"
 
 env: []
 
+secretEnv:
+  EXAMPLE_SECRET: value
+
 image:
   repository: gcr.io/pluralsh/library/busybox
   pullPolicy: IfNotPresent
