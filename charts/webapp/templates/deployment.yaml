@@ -37,8 +37,17 @@ spec:
           - secretRef:
               name: {{ .Release.Name }}-webapp-env
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+          {{ if .Values.databaseCredentials }}
+          {{ range $_, $cred := .Values.databaseCredentials }}
+          - name: POSTGRES_{{ upper $cred.cluster }}_URI
+            valueFrom:
+              secretKeyRef:
+                name: {{ $cred.cluster }}-pguser-{{ $cred.user }}
+                key: jdbc-uri
+          {{ end }}
+          {{ end }}
           {{- with .Values.env }}
-            env:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           ports:

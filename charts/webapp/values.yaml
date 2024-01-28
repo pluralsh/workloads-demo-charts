@@ -8,6 +8,8 @@ secretEnv: {}
 
 env: []
 
+databaseCredentials: []
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent

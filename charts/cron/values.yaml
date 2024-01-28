@@ -8,6 +8,7 @@ cronName: "hello-world"
 crontab: "* * * * *"
 
 env: []
+databaseCredentials: []
 
 secretEnv: {}
 

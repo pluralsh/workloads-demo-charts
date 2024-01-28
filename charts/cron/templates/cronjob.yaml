@@ -26,9 +26,18 @@ spec:
                 name: {{ .Release.Name }}-cron-env
             command: 
             {{ .Values.command | toYaml | nindent 12 }}
-            {{- with .Values.env }}
             env:
-            {{- toYaml . | nindent 12 }}
+            {{ if .Values.databaseCredentials }}
+            {{ range $_, $cred := .Values.databaseCredentials }}
+            - name: POSTGRES_{{ upper $cred.cluster }}_URI
+              valueFrom:
+                secretKeyRef:
+                  name: {{ $cred.cluster }}-pguser-{{ $cred.user }}
+                  key: jdbc-uri
+            {{ end }}
+            {{ end }}
+            {{- with .Values.env }}
+              {{- toYaml . | nindent 12 }}
             {{- end }}
             resources:
               {{- toYaml .Values.resources | nindent 14 }}
