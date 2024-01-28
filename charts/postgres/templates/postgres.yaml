@@ -7,7 +7,8 @@ spec:
   postgresVersion: {{ .Values.pgVersion }}
   users:
   - name: {{ .Values.user }}
-    databases: {{ .Values.dbName }}
+    databases: 
+    - {{ .Values.dbName }}
   instances:
     - name: {{ .Values.instanceName }}
       dataVolumeClaimSpec:
