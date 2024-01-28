@@ -5,6 +5,11 @@ metadata:
   name: {{ .Values.workspace }}-{{ .name }}
 spec:
   namespace: {{ .Release.Namespace }}
+  bindings:
+  {{ if .Values.access.write }}
+    write:
+    {{ toYaml .Values.access.write | nindent 6 }}
+  {{ end }}
   git:
     folder: helm-values
     ref: main

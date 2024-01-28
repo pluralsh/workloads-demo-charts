@@ -6,6 +6,10 @@ cluster: mgmt
 gitRepository: test
 workspace: demo
 
+access:
+  write: []
+  read: []
+
 workloads:
 - name: webapp
   type: webapp
