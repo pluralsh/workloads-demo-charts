@@ -6,9 +6,7 @@ cluster: mgmt
 gitRepository: test
 workspace: demo
 
-access:
-  write: []
-  read: []
+access: {}
 
 workloads:
 - name: webapp

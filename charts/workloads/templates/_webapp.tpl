@@ -6,10 +6,9 @@ metadata:
 spec:
   version: 0.0.1
   namespace: {{ .Release.Namespace }}
-  bindings:
-  {{ if .Values.access.write }}
-    write:
-    {{ toYaml .Values.access.write | nindent 6 }}
+  {{ if .Values.access }}
+  bindings: 
+  {{ toYaml .Values.access | nindent 4 }}
   {{ end }}
   git:
     folder: helm-values
