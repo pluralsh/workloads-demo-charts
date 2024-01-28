@@ -21,7 +21,7 @@ spec:
     pgbackrest:
       image: {{ .Values.imageUrl }}
       repos:
-      - name: volume
+      - name: repo1
         volume:
           volumeClaimSpec:
             accessModes:
