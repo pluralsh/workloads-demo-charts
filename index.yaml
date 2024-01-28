@@ -186,6 +186,16 @@ entries:
   workloads:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-01-28T20:57:31.211451321Z"
+    description: a wrapper for defining arbitrary configurable workloads
+    digest: 5d1f0238e958e64ae2775d1c67119336b6d79919476469d78a55d5bcc299f1d2
+    name: workloads
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.2/workloads-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-01-23T15:36:33.060051382Z"
     description: a wrapper for defining arbitrary configurable workloads
     digest: e807dd59950711fa3393c930daf4d27e7958e30fcafc6d5825764c2e5ce95764
@@ -204,4 +214,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-28T20:47:13.113891373Z"
+generated: "2024-01-28T20:57:31.211503738Z"
