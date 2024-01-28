@@ -5,7 +5,7 @@
 replicaCount: 1
 
 secretEnv:
-  EXAMPLE_SECRET: value
+  EXAMPLE_SECRET: 'value'
 
 env: []
 
