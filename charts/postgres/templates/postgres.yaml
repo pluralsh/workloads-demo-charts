@@ -4,9 +4,10 @@ metadata:
   name: {{ .Values.dbName }}
 spec:
   image: {{ .Values.imageUrl }}
-  postgresVersion: 15
+  postgresVersion: {{ .Values.pgVersion }}
   users:
-  {{ toYaml .Values.users | nindent 4 }}
+  - name: {{ .Values.user }}
+    databases: {{ .Values.dbName }}
   instances:
     - name: {{ .Values.instanceName }}
       dataVolumeClaimSpec:
