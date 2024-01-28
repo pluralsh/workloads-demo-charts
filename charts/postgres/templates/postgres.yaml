@@ -1,0 +1,29 @@
+apiVersion: postgres-operator.crunchydata.com/v1beta1
+kind: PostgresCluster
+metadata:
+  name: {{ .Values.dbName }}
+spec:
+  image: {{ .Values.imageUrl }}
+  postgresVersion: 15
+  users:
+  {{ toYaml .Values.users | nindent 4 }}
+  instances:
+    - name: {{ .Values.instanceName }}
+      dataVolumeClaimSpec:
+        accessModes:
+        - "ReadWriteOnce"
+        resources:
+          requests:
+            storage: {{ .Values.storage }}
+  backups:
+    pgbackrest:
+      image: {{ .Values.imageUrl }}
+      repos:
+      - name: volume
+        volume:
+          volumeClaimSpec:
+            accessModes:
+            - "ReadWriteOnce"
+            resources:
+              requests:
+                storage: 1Gi

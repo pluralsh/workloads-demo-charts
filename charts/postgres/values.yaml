@@ -1,0 +1,17 @@
+# Default values for postgres.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+storage: 10Gi
+
+imageUrl: registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis:ubi8-15.5-0
+
+dbName: postgres
+instanceName: db
+
+users:
+- name: dbuser
+  databases:
+  - exampledb
