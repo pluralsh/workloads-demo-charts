@@ -9,8 +9,7 @@ crontab: "* * * * *"
 
 env: []
 
-secretEnv:
-  EXAMPLE_SECRET: value
+secretEnv: {}
 
 image:
   repository: gcr.io/pluralsh/library/busybox
