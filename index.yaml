@@ -71,6 +71,17 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/cron-v0.1.0/cron-0.1.0.tgz
     version: 0.1.0
+  postgres:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-28T20:22:38.425248141Z"
+    description: A Helm chart for Kubernetes
+    digest: 1944f2d633675139b634c719a0b14777660ca9a6a0e319ab4293dc24f13fdebd
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/postgres-v0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -163,4 +174,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-28T18:30:39.381160659Z"
+generated: "2024-01-28T20:22:38.425278378Z"
