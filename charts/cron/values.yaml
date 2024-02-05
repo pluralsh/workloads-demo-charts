@@ -5,7 +5,9 @@
 replicaCount: 1
 
 cronName: "hello-world"
-crontab: "* * * * *"
+crontab: "*/5 * * * *"
+
+jobTtl: 3600
 
 env: []
 databaseCredentials: []

@@ -9,6 +9,7 @@ spec:
   successfulJobsHistoryLimit: 2
   jobTemplate:
     spec:
+      ttlSecondsAfterFinished: {{ .Values.jobTtl }}
       template:
         spec:
           restartPolicy: Never
