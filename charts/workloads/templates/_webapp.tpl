@@ -21,7 +21,7 @@ spec:
     version: "0.x.x"
     chart: webapp
     valuesFiles:
-    - {{ .name }}.webapp.values.yaml
+    - {{ .name }}.webapp.yaml
     repository:
       namespace: infra
       name: workloads

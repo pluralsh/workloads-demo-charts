@@ -20,7 +20,7 @@ spec:
     version: "0.x.x"
     chart: postgres
     valuesFiles:
-    - {{ .name }}.postgres.values.yaml
+    - {{ .name }}.postgres.yaml
     repository:
       namespace: infra
       name: workloads

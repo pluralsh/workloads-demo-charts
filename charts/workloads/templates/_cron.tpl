@@ -21,7 +21,7 @@ spec:
     version: "0.x.x"
     chart: cron
     valuesFiles:
-    - {{ .name }}.cron.values.yaml
+    - {{ .name }}.cron.yaml
     repository:
       namespace: infra
       name: workloads
