@@ -6,7 +6,7 @@ replicaCount: 1
 
 storage: 10Gi
 
-imageUrl: registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis:ubi8-15.3-3.2-0
+imageUrl: registry.developers.crunchydata.com/crunchydata/crunchy-postgres-gis:ubi8-15.3-3.3-0
 
 dbName: postgres
 instanceName: db
