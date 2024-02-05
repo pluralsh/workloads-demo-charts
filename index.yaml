@@ -94,6 +94,16 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-05T18:01:34.634613805Z"
+    description: A Helm chart for Kubernetes
+    digest: deb3cd603d03db9b1225eb7ed5b4eba28fa0483520f5414de9b7a24bd19f4ae6
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/postgres-v0.1.6/postgres-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-05T15:50:13.383166094Z"
     description: A Helm chart for Kubernetes
     digest: 70f8f4528364ff76431000232c9980035394f8af2d0fe7f8cced1cc41156fcda
@@ -294,4 +304,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-05T16:04:06.9342635Z"
+generated: "2024-02-05T18:01:34.634659991Z"
