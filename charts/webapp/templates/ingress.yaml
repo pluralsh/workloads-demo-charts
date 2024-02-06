@@ -23,7 +23,7 @@ spec:
         pathType: Prefix
         backend:
           service: 
-            name: console
+            name: {{ include "webapp.fullname" . }}
             port: 
               name: http
 {{ end }}
