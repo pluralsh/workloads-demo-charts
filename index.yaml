@@ -165,6 +165,16 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-06T17:50:53.591849629Z"
+    description: basic webapp workload
+    digest: b0cc863e1ea9018a3009fbeb90b3f95d6f78ea71789750a726d8fe4f6fd51bf9
+    name: webapp
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/webapp-v0.1.11/webapp-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-06T16:58:24.311760801Z"
     description: basic webapp workload
     digest: 139d1a68d95befb16099635012bd7a8edfeba04ff8040172d070cf830d87dba6
@@ -334,4 +344,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-06T16:58:24.311841241Z"
+generated: "2024-02-06T17:50:53.591960947Z"
