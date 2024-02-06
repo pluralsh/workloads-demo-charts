@@ -51,7 +51,7 @@ ingress:
   ingressClass: nginx
   annotations:
     kubernetes.io/tls-acme: "true"
-    cert-manager.io/cluster-issuer: plural
+    cert-manager.io/cluster-issuer: letsencrypt-prod
     nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
   hosts:
     - host: chart-example.local
