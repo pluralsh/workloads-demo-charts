@@ -14,7 +14,7 @@ spec:
   tls:
   - hosts:
     - {{ .Values.ingress.hostname | quote }}
-    secretName: console-tls
+    secretName: {{ include "webapp.fullname" . }}-tls
   rules:
   - host: {{ .Values.ingress.hostname | quote }}
     http:
