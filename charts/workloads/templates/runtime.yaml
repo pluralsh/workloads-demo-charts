@@ -1,0 +1,19 @@
+apiVersion: deployments.plural.sh/v1alpha1
+kind: ServiceDeployment
+metadata:
+  name: {{ .Values.workspace }}-runtime
+spec:
+  namespace: {{ .Release.Namespace }}
+  configurationRef:
+    name: workspace-secrets
+    namespace: {{ .Release.Namespace }}
+  helm:
+    version: "0.x.x"
+    chart: runtime
+    repository:
+      namespace: infra
+      name: workloads
+  clusterRef:
+    kind: Cluster
+    name: {{ .Values.cluster }}
+    namespace: infra

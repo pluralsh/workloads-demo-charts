@@ -8,6 +8,8 @@ workspace: demo
 
 access: {}
 
+secrets: {}
+
 workloads:
 - name: webapp
   type: webapp

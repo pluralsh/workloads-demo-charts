@@ -4,7 +4,6 @@ kind: ServiceDeployment
 metadata:
   name: {{ .Values.workspace }}-{{ .name }}
 spec:
-  version: 0.0.1
   namespace: {{ .Release.Namespace }}
   {{ if .Values.access }}
   bindings: 
