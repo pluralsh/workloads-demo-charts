@@ -172,6 +172,17 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/postgres-v0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
+  runtime:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-07T04:21:33.050356008Z"
+    description: A Helm chart for Kubernetes
+    digest: 3e7916fc4eb1233f7bdfb76fecd2c7a9b71dba8f4116e2a57b93942b404ac073
+    name: runtime
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/runtime-v0.1.0/runtime-0.1.0.tgz
+    version: 0.1.0
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -354,4 +365,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-06T17:58:29.429271487Z"
+generated: "2024-02-07T04:21:33.050432881Z"
