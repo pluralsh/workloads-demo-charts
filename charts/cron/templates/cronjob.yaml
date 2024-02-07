@@ -14,7 +14,7 @@ spec:
       template:
         spec:
           restartPolicy: Never
-          serviceAccountName: default
+          serviceAccountName: mottmac
           {{- with .Values.imagePullSecrets }}
           imagePullSecrets:
           {{- toYaml . | nindent 10 }}
