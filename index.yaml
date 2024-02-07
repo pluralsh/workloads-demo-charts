@@ -175,6 +175,16 @@ entries:
   runtime:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-07T04:52:15.264668433Z"
+    description: A Helm chart for Kubernetes
+    digest: b5ab38ad334ccf0402e06cd2a0fc7b7ee58ade33986d3a6aa86f76afabab916c
+    name: runtime
+    type: application
+    urls:
+    - https://github.com/pluralsh/workloads-demo-charts/releases/download/runtime-v0.1.1/runtime-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-07T04:21:33.050356008Z"
     description: A Helm chart for Kubernetes
     digest: 3e7916fc4eb1233f7bdfb76fecd2c7a9b71dba8f4116e2a57b93942b404ac073
@@ -375,4 +385,4 @@ entries:
     urls:
     - https://github.com/pluralsh/workloads-demo-charts/releases/download/workloads-v0.1.0/workloads-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-07T04:44:19.309214983Z"
+generated: "2024-02-07T04:52:15.264750917Z"
