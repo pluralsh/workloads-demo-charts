@@ -1,0 +1,3 @@
+{% if configuration[".dockerconfigjson"] %}
+pullCredentials: {{ configuration[".dockerconfigjson"] }}
+{% endif %}
