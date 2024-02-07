@@ -1,3 +1,6 @@
 replicaCount: 1
 
+serviceAccount:
+  annotations: {}
+
 pullCredentials: ~
