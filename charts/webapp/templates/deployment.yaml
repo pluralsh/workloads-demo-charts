@@ -47,9 +47,9 @@ spec:
                 key: jdbc-uri
           {{ end }}
           {{ end }}
-          {{- with .Values.env }}
-            {{- toYaml . | nindent 12 }}
-          {{- end }}
+          {{ with .Values.env }}
+            {{- toYaml . | nindent 10 }}
+          {{ end }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
