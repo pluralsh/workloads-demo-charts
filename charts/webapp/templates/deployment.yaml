@@ -44,7 +44,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: {{ $cred.cluster }}-pguser-{{ $cred.user }}
-                key: jdbc-uri
+                key: uri
           {{ end }}
           {{ end }}
           {{ with .Values.env }}
